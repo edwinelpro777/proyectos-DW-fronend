@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styler.css">
+</head>
+<body>
+    <form onsubmit="Datos()">
+        <h1>Registro</h1>
+
+        <label>
+            <p>nombre:</p>
+            <input id="nombre" type="text" placeholder="nombre" required>
+        </label>
+
+        <label>
+            <p>Apellido:</p>
+            <input id="apellido" type="text" placeholder="Apellido" required>
+        </label>
+
+        <label>
+            <p>Nombre de usuario:</p>
+            <input id="usuario" type="text" placeholder="usuario" required>
+        </label>
+
+        <label>
+            <p>Correo electronico:</p>
+            <input id="correo" type="email" placeholder="Correo" required>
+        </label>
+
+        <label>
+            <p>Contraseña:</p>
+            <input id="contraseña" type="password" placeholder="Contraseña" required>
+        </label>
+
+        <label class="terminos">
+            <input type="checkbox" class="check" placeholder=" check" required>  <p>Acepto los terminos, condiciones y politicas</p>
+        </label> 
+
+        <button type="submit" class="btn">Iniciar Sesion</button>
+
+        <button type="button" class="cambio" onclick="color()" >Modo Oscuro</button>
+    </form>
+    <script src="./scrip.js"></script>
+</body>
+</html>
